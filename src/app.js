@@ -9,7 +9,10 @@ const app = express();
 const router = express.Router();
 
 //conecta no banco
-mongoose.connect('mongodb://gabriel:galu0627@ds018238.mlab.com:18238/ndstr-gabriel');
+
+
+// carrega as models
+const Product = require('./models/product');
 
 //carrega rotas
 const indexRoute = require('./routes/index-route');
